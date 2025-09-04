@@ -5,6 +5,9 @@ import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, FileText, Eye, Users } from "lucide-react"
 import Link from "next/link"
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+export const runtime = 'nodejs';
 
 export default async function AdminTemplates() {
   const supabase = createServerClient()

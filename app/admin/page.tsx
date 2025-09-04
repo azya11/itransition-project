@@ -3,6 +3,9 @@ import { redirect } from "next/navigation"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Users, Package, FileText, MessageSquare, TrendingUp, Shield } from "lucide-react"
+export const dynamic = 'force-dynamic';
+export const revalidate = 0;
+export const runtime = 'nodejs';
 
 export default async function AdminDashboard() {
   const supabase = createServerClient()
